@@ -1,0 +1,107 @@
+///////////////////////////////////////////////////////////////////////////////////
+@echo off
+:poczatek
+cls
+echo ———————————————–
+echo Wybierz z listy
+echo ———————————————–
+echo.
+echo 1) Kasowanie starych profili
+echo 2) Kasowanie plikow tymczasowych
+echo 3) Defragmentacja
+echo 4) KONIEC
+echo.
+set /p opcja=wybierz:
+if %opcja%==1 goto opcja1
+if %opcja%==2 goto opcja2
+if %opcja%==3 goto opcja3
+if %opcja%==4 exit
+goto zly_wybor
+:opcja1
+cls
+echo wybrano Kasowanie starych profili
+pause
+goto poczatek
+:opcja2
+cls
+echo wybrano Kasowanie plikow tymczasowych
+pause
+goto poczatek
+:opcja3
+cls
+echo wybrano Defragmentacje
+pause
+goto poczatek
+:zly_wybor
+echo OPCJA NIE ZNANA.. WYBIERZ PONOWNIE!
+pause
+goto poczatek
+///////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+Zadanie polega na 
+Utworzeniu Menu z CMD 
+1.      Logo (5s) dopasowanie rozmiaru okna (zmiana kolorów) 
+2.      zrzut 1 (5s)
+a.      Nazwisko 
+b.      Imię 
+c.      Klasa 
+d.      Nr z dziennika 
+3.      zrzut  2 Menu Użytkownicy
+a.       Wyświetlenie Informacji o danym użytkowniku 
+b.       Wyświetlenie Informacji o grupach w systemie
+c.      Wyświetlenie kto należy do grupy o najwyższych uprawnieniach 
+d.      Utworzenie pliku w którym zostaną zawarte informacje a-c o nazwie użytkownicy.txt > Pulpit
+4.      Zrzut 3 Informacje 
+a.       Informacja o wersji systemu operacyjnego 
+b.       Temp
+i.      Wyświetlenie plików temp
+ii.     Usunięcie plików temp
+c.      Wyświetlenie informacji – MAC karty sieciowe 
+d.      Wyświetlenie listy procesów
+e.      Wyświetlenie wszystkich atrybutów plików znajdujących się w katalogu w którym został uruchomiony skrypt + dodatkowa informacja poniżej co oznaczają poszczególne literki R S H itp. 
+5.      Narzędzia - wyświetlenie narzędzi po wpisaniu nazwy
+a.      Lupa
+b.      Rejestr
+c.      Zarządzanie użytkownikami i grupami
+d.      Panel sterowania 
+e.      Zarządzanie zasadami grup 
+f.      Programy i Funkcje 
+g.      Menedżer urządzeń 
+h.      Punkt przywracania 
+i.      Kopia zapasowa 
+j.      Tablica znaków
+k.      Zarządzanie dyskami 
+l.      Podgląd zdarzeń
+m.      Pomoc zdalna 
+n.      Pulpit zdalny 
+o.      Karty sieciowe (połączenia sieciowe)
+p.      Rejestrator kroków (rejestrator problemów)
+6.      Zrzut 4 Zapis 
+a.      Zapisanie drzewa plików C na pulpicie pod nazwą drzewo.txt 
+b.      Zapisanie w nazwisko.txt  informacji dlaczego lubicie SO 
+c.      Zapisanie informacji w info.txt „użytkownik (nazwa użytkownika) uruchomił dziś tj (data i godzina) skrypt” ma działać niezależnie od użytkownika który to uruchomi  
+7.      Uruchamianie 
+a.      Uruchomienie strony szkoły w przeglądarce
+b.      Uruchomienie strony z dziennikiem elektronicznym w przeglądarce 
+c.      Uruchomienie notatnika 
+d.      Zabicie procesu notatnika (p c) 
+e.      Wyłączenie komputera
+f.      Wylogowanie użytkownika 
+ 
+*************************dodatkowy punkt ********************
+ 
+ 
+8.      Zrzut 5 Utworzyć 5 pytań (z obrazkami) z E 12, EE08, INF02 a wyniki zapisać w formie
+Nazwa użytkownika
+Godzina rozpoczęcia testu
+Zad1 A – odpowiedź prawidłowa
+Zad2 B – odpowiedź niepoprawna 
+Zad3 C – odpowiedź prawidłowa
+Zad4 A – odpowiedź prawidłowa
+Zad5 C – odpowiedź prawidłowa
+Godzina zakończenia testu
+Udzielono 
+-4 poprawne odpowiedzi
+-1 nie odpowiednią
+-0 nie udzielono żadnej odpowiedzi 
